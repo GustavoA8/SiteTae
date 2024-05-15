@@ -1,0 +1,334 @@
+@font-face {
+    font-family: Stencil;
+    src: url(../Stencil-Moonlight-LT-Std.ttf);
+}
+@font-face {
+    font-family: Mont;
+    src: url(../montserrat-medium.ttf);
+}
+@font-face {
+  font-family: archivo;
+  src: url(../ArchivoBlack-Regular.ttf);
+}
+body{
+    font-family:Mont;
+    margin: 0;
+    background-color: gray;
+}
+header{
+    background-color: #2D301C;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 7;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 15px;
+    text-align: center;
+    gap: 30px;
+    
+
+}
+header li{
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    border-right: #BDB89A solid 3px;
+    padding-right: 20px;
+}
+header li:hover{
+    text-decoration: underline;
+    color: #2D301C;
+    transform: scale(1.2);
+
+}
+a{
+    color: #BDB89A;
+    text-decoration: none;
+}
+header figure img, footer figure img{
+    width: 150px;
+}
+.section-shield{
+    padding-top:10px ;
+    background-image: url(../img/teste-fundo-site-alta-qualidade.png);
+    background-size: 100%;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 590px;
+}
+.section-shield h1{
+    font-size: 50px;
+    font-family: Stencil;
+    font-weight:lighter ;
+    margin: 0;
+   line-height: 90px; 
+
+}
+.section-shield p{
+    font-family: Mont;
+    margin-top: 0;
+}
+#titulo{
+    border: solid red 0px;
+    width: 25%;
+    margin-left: 170px;
+    margin-top: 100px;
+    color: #2D301C;
+
+    
+}
+#botao{
+    margin-left: 170px;
+    margin-top: 20px;
+    
+}
+button{
+    background: none;
+    font-family: Mont;
+    margin-right: 10px;
+    width: 120px;
+    border: #fff solid 2px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #2D301C;
+}
+.section-usability{
+    background-color: #2D301C;
+    width: 99.7%;
+    height: 700px;
+    border: #BDB89A solid 3px;
+    background-size: 100%;
+    width: 99.7%;
+    text-align: center;
+    background-image: url(../img/fundo-usability.png);
+    color: #BDB89A;
+}
+.section-usability h2{
+    margin-top: 30px;
+    font-size: 50px;
+
+}
+.card img{
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+        
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 371px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:70px;
+    box-shadow: rgba(10, 10, 10, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    
+  }
+  .card{
+    display:flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px;
+  }
+  
+  .flip-card-back {
+    background-color: #515437;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p{
+    width: 90%;
+    margin-top: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-training{
+    text-align: center;
+    background-color: #525437;
+    z-index: -1;
+    height: 618px;
+
+  }
+  .section-training p{
+    width:30% ;
+    font-size: 30px;
+    font-family: Mont;
+    margin-left: auto;
+    margin-right: auto;
+    color: #BDB89A;
+  }
+
+  .section-training h2{
+    font-family: Stencil;
+    font-weight:lighter ;
+    font-size: 80px;
+    color: #BDB89A;
+    
+  }
+  .section-training button{
+    margin-top: 1.5%;
+    background-color: #2D301C;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 7%;
+    padding: 15px;
+    box-shadow: rgba(10, 10, 10, 1) 0px 7px 29px 0px;
+    transition: transform 0.3s ease;
+
+  }
+  .section-training button:hover{
+    transform: scale(1.2);
+    background-color: #888e66 ;
+  }
+  .section-about-us{
+    background-image: url(../img/bandeira\ site\ usa\ about\ us.png);
+    background-size: 100%;
+    width: 99.7%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: #BDB89A solid 3px;
+    max-height: 576px;
+
+  }
+  .section-about-us figure{
+    width: 100%;
+  }
+  .section-about-us figure img{
+    width: 80%;
+    margin-left: 21% ;
+
+  }
+  .section-about-us article{
+    font-family: archivo;
+    background-color: #2d301c;
+    width: 90%;
+    max-height: 576px;
+    color: #BDB89A;
+    text-align: center;
+    box-shadow: 25px 0px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45);
+
+  }
+  .section-about-us article h2{
+    font-size: 120px;
+    margin-top: 5%;
+    
+  }
+  .section-about-us article p{
+    text-align: justify;
+    width: 85%;
+    font-family: Mont;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Ajuste conforme necessário */
+    overflow: hidden;
+    text-align: center; /* Centralize o conteúdo verticalmente */
+}
+
+.video-wrapper video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Para preencher todo o espaço */
+    z-index: 0;
+    object-fit: cover;
+    min-width: 695.5;
+}
+.section-training .containe{
+    position: relative;
+    top: -750px;
+    height: 0px;
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20%;
+  background-color: #2d301c;
+}
+footer .rede-sociais{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  
+}
+footer .rede-sociais img{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+footer .rede-sociais div{
+  width: 50px;
+  height: 50px;
+  background-color: #525437;
+  
+}
+footer .listas{
+  display: flex;
+}
+footer ul{
+  list-style-type: none;
+}
+footer .listas img{
+  width: 15px;
+  margin-right: 5px;
+  
+}
+footer li{
+  margin-top: 25px;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+  padding-right: 20px;
+}
+footer li:hover{
+  text-decoration: underline;
+    color: #2D301C;
+}
