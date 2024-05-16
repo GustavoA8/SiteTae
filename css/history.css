@@ -1,0 +1,123 @@
+
+@media(max-width:940px) {
+    main{
+        background-color: #2D301C!important;
+        background-image: url()!important;
+        padding-bottom:40% ;
+        min-height: 2000px!important;
+        height: 2000px!important;
+    }
+    main h1{
+        font-size: 60px!important;
+        padding-top: 15%!important;
+    }
+    main .section-p1{
+        margin-left: 11%!important;
+        width: 70%!important;
+        
+    }
+    main .section-p2{
+        margin-top: 10%!important;
+        float: inline-start!important;
+        margin-left: 11%;
+        width: 70%!important;
+    }
+    main .section-p3{
+        margin-left: 11%!important;
+        width: 70%!important;
+        margin-top: 70%!important;
+    }
+    main .section-p4{
+        float: inline-start!important;
+        margin-top: 10%!important;
+        width: 70%!important;
+        margin-left: 11%!important
+    }
+}
+@media(min-width:941px)and ( max-width: 1300px){
+    main{
+        min-height: 2500px!important;
+        height: 2000px!important;
+        
+
+    }
+    main .section-p1{
+        margin-left: 11%!important;
+        width: 70%!important;
+        
+    }
+    main .section-p2{
+        margin-top: 10%!important;
+        float: inline-start!important;
+        margin-left: 11%;
+        width: 70%!important;
+    }
+    main .section-p3{
+        margin-left: 11%!important;
+        width: 70%!important;
+        margin-top: 70%!important;
+    }
+    main .section-p4{
+        float: inline-start!important;
+        margin-top: 10%!important;
+        width: 70%!important;
+        margin-left: 11%!important
+    }
+
+}
+
+main{
+    background-image: url(../img/fundo\ site\ learn\ more\ teste.png);
+    min-height: 3582px;
+    height: 100%;
+    min-width: 764px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+}
+main div h1{
+    margin-top: 5%;
+    font-family: Stencil;
+    color: #D6D2CB;
+    font-weight: lighter;
+    font-size: 120px;
+    padding-top: 5%;
+    
+}
+main section{
+    border:  red 1px;
+
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+main section p{
+    font-family: Mont;
+    font-size: 25px;
+    color: #D6D2CB;
+}
+main .section-p1{
+    margin-top: 15%;
+    margin-left: 5%;
+    width: 45%;
+    
+}
+main .section-p2{
+    margin-top: 35%;
+    float: inline-end;
+    margin-right: 15%;
+}
+main .section-p3{
+    margin-top: 70%;
+    margin-left: 5%;
+}
+main .section-p4{
+    margin-top: 30%;
+    float: inline-end;
+    margin-right: 5%;
+}
+footer{
+
+}

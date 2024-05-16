@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Stencil;
+  src: url(../Stencil-Moonlight-LT-Std.ttf);
+}
+@font-face {
+  font-family: Mont;
+  src: url(../montserrat-medium.ttf);
+}
+@font-face {
+font-family: archivo;
+src: url(../ArchivoBlack-Regular.ttf);
+}
+body{
+  margin: 0;
+  font-family: Mont;
+}
+header{
+    background-color: #2D301C;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 7;
+    top: 0;
+    font-family: Mont;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 15px;
+    text-align: center;
+    gap: 30px;
+    
+
+}
+header li{
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    border-right: #BDB89A solid 3px;
+    padding-right: 20px;
+}
+header li:hover{
+    text-decoration: underline;
+    color: #2D301C;
+    transform: scale(1.2);
+
+}
+a{
+    color: #BDB89A;
+    text-decoration: none;
+}
+header figure img, footer figure img{
+    width: 150px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20%;
+    background-color: #2d301c;
+    font-family: Mont;
+    min-width: 764px;
+  }
+  footer .rede-sociais{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    
+  }
+  footer .rede-sociais img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  footer .rede-sociais div{
+    width: 50px;
+    height: 50px;
+    background-color: #525437;
+    
+  }
+  footer .listas{
+    display: flex;
+  }
+  footer ul{
+    list-style-type: none;
+  }
+  footer .listas img{
+    width: 15px;
+    margin-right: 5px;
+    
+  }
+  footer li{
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    padding-right: 20px;
+  }
+  footer li:hover{
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  
