@@ -1,4 +1,4 @@
-@media (max-width: 1580px) {
+@media (min-width:701px) and (max-width: 1580px) {
   .section-shield {
     height: 470px !important;
   }
@@ -14,7 +14,28 @@
   }
 
 }
+@media (max-width: 700px) {
+  .section-shield{
+    background-size: 300%!important;
+    min-height: 1300px!important;
+    justify-content: center;
+  }
+  .section-shield #titulo{
+    margin-top: 35%;
+  }
+  .section-shield h1 {
+    font-size: 150px!important;
+    line-height: 130px!important;
+  
+  }
+  .section-shield p{
+    font-size: 50px;
+    width: 300%
+  }
+  
 
+  
+}
 .section-shield {
   padding-top: 10px;
   background-image: url(../img/teste-fundo-site-alta-qualidade.png);
@@ -104,13 +125,14 @@ main .section-shield button:hover {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  min-width: 300px;
   height: 371px;
   perspective: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
   box-shadow: rgba(10, 10, 10, 0.2) 0px 7px 29px 0px;
+
 }
 
 .flip-card-inner {
@@ -130,6 +152,7 @@ main .section-shield button:hover {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  gap: 10%;
 }
 
 .flip-card:hover .flip-card-inner {
