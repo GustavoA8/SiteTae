@@ -1,14 +1,14 @@
 @font-face {
   font-family: Stencil;
-  src: url(../Stencil-Moonlight-LT-Std.ttf);
+  src: url(../font/Stencil-Moonlight-LT-Std.ttf);
 }
 @font-face {
   font-family: Mont;
-  src: url(../montserrat-medium.ttf);
+  src: url(../font/montserrat-medium.ttf);
 }
 @font-face {
 font-family: archivo;
-src: url(../ArchivoBlack-Regular.ttf);
+src: url(../font/ArchivoBlack-Regular.ttf);
 }
 body{
   margin: 0;
@@ -111,8 +111,12 @@ footer {
     font-size: 18px;
     padding-right: 20px;
   }
-  footer li:hover{
-    text-decoration: underline;
-    color: #ffffff;
+  footer .fast-link img{
+    width: 20px;
+
   }
+  footer a:hover{
+    color: #525437;
+  }
+  
   
