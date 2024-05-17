@@ -1,8 +1,6 @@
 
 @media(max-width:940px) {
     main{
-        background-color: #2D301C!important;
-        background-image: url()!important;
         padding-bottom:40% ;
         min-height: 2000px!important;
         height: 2000px!important;
@@ -79,7 +77,7 @@ main{
 main div h1{
     margin-top: 5%;
     font-family: Stencil;
-    color: #D6D2CB;
+    color: #BDB89A;
     font-weight: lighter;
     font-size: 120px;
     padding-top: 5%;
@@ -91,12 +89,14 @@ main section{
     border-radius: 10px;
     padding: 30px;
     width: 40%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
 }
 main section p{
     font-family: Mont;
     font-size: 25px;
-    color: #D6D2CB;
+    color: #BDB89A;
+    background-clip: text;
+    
 }
 main .section-p1{
     margin-top: 15%;
@@ -117,7 +117,4 @@ main .section-p4{
     margin-top: 30%;
     float: inline-end;
     margin-right: 5%;
-}
-footer{
-
 }

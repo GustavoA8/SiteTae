@@ -1,13 +1,26 @@
+@media (max-width: 1580px){
+  .section-shield{
+    height: 470px!important;
+  }
+  .section-about-us article h2{
+    font-size: 50px!important;
+
+  }
+  .section-about-us article p{
+    width: 80%!important;
+    font-size: 15px!important;
+  }
+
+}
 .section-shield{
     padding-top:10px ;
     background-image: url(../img/teste-fundo-site-alta-qualidade.png);
+    height: 650px;
     background-size: 100%;
-    width: 100%;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-
-    height: 590px;
+    min-width: 1195px ;
 }
 .section-shield h1{
     font-size: 90px;
@@ -46,6 +59,12 @@ button{
     padding-left: 20px;
     padding-right: 20px;
     color: #2D301C;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+main .section-shield button:hover{
+  background-color: #fff;
+
 }
 .section-usability{
     background-color: #2D301C;
@@ -53,10 +72,11 @@ button{
     height: 700px;
     border: #BDB89A solid 3px;
     background-size: 100%;
-    width: 99.7%;
     text-align: center;
     background-image: url(../img/fundo-usability.png);
     color: #BDB89A;
+    box-shadow: rgba(10, 10, 10, 1) 0px 7px 29px 0px;
+    min-width: 1195px ;
 }
 .section-usability h2{
     margin-top: 30px;
@@ -133,6 +153,7 @@ button{
     background-color: #525437;
     z-index: -1;
     height: 590px;
+    min-width: 1195px ;
 
   }
   .section-training p{
@@ -175,6 +196,7 @@ button{
     grid-template-columns: repeat(2,1fr);
     border: #BDB89A solid 3px;
     max-height: 576px;
+    min-width: 1195px ;
 
   }
   .section-about-us figure{
@@ -235,3 +257,4 @@ button{
     top: -750px;
     height: 0px;
 }
+
