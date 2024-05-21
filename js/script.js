@@ -1,4 +1,10 @@
 let verificar = false
+var txt;
+  if (confirm("Você é maior de idade?")) {
+    txt = "You pressed OK!";
+  } else {
+    window.frames.closewindow();
+  }
 function dropdown() {
     if (verificar == false) {
         console.log('funcionando')

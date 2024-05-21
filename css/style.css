@@ -88,7 +88,7 @@
   border: solid red 0px;
   width: 25%;
   margin-left: 170px;
-  margin-top: 160px;
+  margin-top: 5%;
   color: #2D301C;
 
 
@@ -121,7 +121,7 @@ main .section-shield button:hover {
 
 .section-usability {
   background-color: #2D301C;
-  width: 99.7%;
+  width: 99.5%;
   height: 700px;
   border: #BDB89A solid 3px;
   background-size: 100%;
@@ -271,7 +271,7 @@ video {
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  width: 7%;
+  width: 10%;
   padding: 15px;
   box-shadow: rgba(10, 10, 10, 1) 0px 7px 29px 0px;
   transition: transform 0.3s ease;
@@ -286,7 +286,7 @@ video {
 .section-about-us {
   background-image: url(../img/bandeira\ site\ usa\ about\ us.png);
   background-size: 100%;
-  width: 99.7%;
+  width: 99.5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: #BDB89A solid 3px;
