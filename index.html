@@ -7,22 +7,32 @@
     <title>TAE</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/header_footer.css">
+    
 </head>
 
 <body>
+    <script src="./js/script.js"></script>
     <header>
         <figure><a href="index.html"><img src="img/Ativo 194Alta resolução.png" alt=""></a></figure>
         <nav>
             <ul>
-                <li><a href="history.html">The Shield</a></li>
-                <div class="separeitor"></div>
-                <li><a href="">Training</a></li>
-                <div class="separeitor"></div>
-                <li><a href="">About Us</a></li>
-                <div class="separeitor"></div>
-                <li><a href="">Contact Us</a></li>
-                <div class="separeitor"></div>
-                <li><a href="">Social Media</a></li>
+                <li class="item-nav"><a href="history.html">The Shield</a></li>
+                <li class="item-nav"><a href="">Training</a></li>
+                <li class="item-nav"><a href="">About Us</a></li>
+                <li class="item-nav"><a href="">Contact Us</a></li>
+                <li class="item-nav"><a href="">Social Media</a></li>
+                <div id="dropdown" onclick="dropdown()" >
+                    <div class="btnimg">
+                        <img src="./img/icon-bar.png" alt="">
+                    </div>
+                    <ul class="dropdown-content">
+                        <li><a href="">The Shield</a></li>
+                        <li><a href="">Training</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
             </ul>
         </nav>
 
@@ -152,6 +162,7 @@
         </div>
 
     </footer>
+    
 
 </body>
 

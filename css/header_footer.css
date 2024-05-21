@@ -10,6 +10,23 @@
 font-family: archivo;
 src: url(../font/ArchivoBlack-Regular.ttf);
 }
+@media (max-width: 700px) {
+  header{
+    padding: 50px;
+  }
+  header figure img{
+    width: 200px!important;
+  }
+  header nav ul .item-nav{
+    display: none!important;
+    
+  }
+  #dropdown{
+    display: block!important;
+    margin-left: 60%;
+    
+  }
+}
 body{
   margin: 0;
   font-family: Mont;
@@ -26,7 +43,7 @@ header{
 nav{
   width: 100%;
 }
-nav ul{
+nav ul {
     display: flex;
     text-decoration: none;
     list-style-type: none;
@@ -38,6 +55,25 @@ nav ul{
 
     
 
+}
+#dropdown{
+  display: none;
+}
+#dropdown div img{
+  margin-top: 10px;
+  width: 100px;
+
+}
+.dropdown-content{
+  display: none;
+  width: 1300px;
+  margin-right: 1400px;
+
+  
+
+}
+.dropdown-content li a{
+  font-size: 50px;
 }
 header li{
     margin-top: 25px;
