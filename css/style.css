@@ -14,15 +14,41 @@
   }
 
 }
+
+.section-shield {
+  padding-top: 10px;
+  background-image: url(../img/teste-fundo-site-alta-qualidade.png);
+  height: 650px;
+  background-size: 100%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1195px;
+}
 @media (max-width: 700px) {
   .section-shield{
-    background-size: 300%!important;
-    min-height: 1300px!important;
+    background-image: url(../img/mobile\ ad\ 2.png)!important;
+    min-height: 2200px!important;
     justify-content: center;
+
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+    top: 0;
+    left: 0;
   }
-  .section-shield #titulo{
-    margin-top: 35%;
+  .section-shield .parallax{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: red;
+    height: fit-content;
+
   }
+  /* .section-shield #titulo{
+    margin-top: 110%;
+  } */
   .section-shield h1 {
     font-size: 150px!important;
     line-height: 130px!important;
@@ -37,7 +63,10 @@
     width: 25%!important;
   }
   .section-usability{
+    /* margin-top: 2200px; */
     height: 1900px!important;
+    box-shadow: rgba(10, 10, 10, 0.5) -1px -20px 29px 0px!important;
+    
   }
   .card{
     display: grid!important;
@@ -55,20 +84,40 @@
     font-size: 35px;
     margin-top: 10%!important;
   }
+  .section-training .background-video{
+    display: none;
+  }
+  .section-training{
+    background-image: url(../img/fundo-training-mobile.png);
+    background-size: cover;
+    background-position: center;
+    height: 1920px!important;
+    padding: 20px;
+  }
+
+  .containe{
+      width: 100%;
+
+  }
+
+  .section-training p{
+    font-size: 2em!important;
+  }
+  .section-training button{
+    position: absolute;
+    top: 115%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 10px 50px
+      
+
+
+  }
 
   
 }
-.section-shield {
-  padding-top: 10px;
-  background-image: url(../img/teste-fundo-site-alta-qualidade.png);
-  height: 650px;
-  background-size: 100%;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 1195px;
-}
-
 .section-shield h1 {
   font-size: 90px;
   font-family: Stencil;
@@ -271,8 +320,8 @@ video {
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  width: 10%;
-  padding: 15px;
+  /* width: 10%; */
+  /* padding: 15px; */
   box-shadow: rgba(10, 10, 10, 1) 0px 7px 29px 0px;
   transition: transform 0.3s ease;
 
