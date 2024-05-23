@@ -37,6 +37,7 @@
     position:relative;
     top: 0;
     left: 0;
+    width: 1230px!important;
   }
   .section-shield .parallax{
     position: absolute;
@@ -61,11 +62,13 @@
   .section-shield button{
     font-size: 40px!important;
     width: 25%!important;
+    margin-bottom: 10%;
   }
   .section-usability{
     /* margin-top: 2200px; */
     height: 1900px!important;
     box-shadow: rgba(10, 10, 10, 0.5) -1px -20px 29px 0px!important;
+    width: 1230px!important;
     
   }
   .card{
@@ -115,6 +118,27 @@
 
 
   }
+  .section-about-us{
+    display: block!important;
+    width: 1230px!important;
+    height: 600px;
+
+  }
+  .section-about-us figure{
+    display: none;
+  }
+  .section-about-us article{
+    width: 80%!important;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-about-us h2{
+    margin-bottom: 2%;
+  }
+  .section-about-us p{
+    font-size: 20px!important;
+  }
 
   
 }
@@ -127,6 +151,8 @@
   width: 10%;
 
 }
+
+
 
 .section-shield p {
   font-family: Mont;

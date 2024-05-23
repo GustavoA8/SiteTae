@@ -34,8 +34,8 @@
 }
 @media(min-width:941px)and ( max-width: 1300px){
     main{
-        min-height: 2500px!important;
-        height: 2000px!important;
+        min-height: 3500px!important;
+        height: 100%!important;
         
 
     }
@@ -61,8 +61,47 @@
         width: 70%!important;
         margin-left: 11%!important
     }
-
+    .container-3{
+        height: 450px!important;
+        max-width:1216px!important ;
+    }
+    .container-4{
+        max-height: 470px!important;
+        max-width:1216px!important ;
+    }
 }
+
+
+@media (max-width: 939px){
+    .container-1,.container-2,.container-3,.container-4{
+        width: 290%!important;
+        background-size: 100%!important;
+        width: 1230px!important;
+    }
+    .container-1{
+        margin-top: 25%!important;
+    }
+    .container-1 section{
+        margin: 0!important;
+        float: none !important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        margin-top: 15%!important;
+    }
+    .container-2 section{
+        margin: 0!important;
+        float: none !important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    
+    }
+    .container-3{
+        height: 400px!important;
+    }.container-4{
+        height: 500px!important;
+    }
+}
+   
 .container-1{
     background-image: url(../img/fundo\ site\ learn\ more\ teste.png);
     min-height: 3582px;
@@ -70,8 +109,10 @@
     min-width: 764px;
     text-align: center;
     width: 100%;
+    
 
 }
+
 main .container-1 h1{
     margin-top:0; 
     font-family: Stencil;
@@ -142,6 +183,9 @@ main section{
     width: 35%;
     /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
 }
+main .container-2{
+    min-height:2200px ;
+}
 main .container-2 section p{
     font-family: Mont;
     font-size: 25px;
@@ -185,7 +229,7 @@ main .container-3{
   
     text-align: center;
     width: 100vw;
-    height: 700px;
+    height: 600px;
 
 }
 
@@ -193,6 +237,7 @@ main .container-4{
     width: 100vw;
     height: fit-content;
     position: relative;
+    max-height: 700px;
 }
 main .container-4 video{
     width: 100%;

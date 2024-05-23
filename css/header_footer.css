@@ -26,6 +26,11 @@ src: url(../font/ArchivoBlack-Regular.ttf);
     margin-left: 60%;
     
   }
+  footer{
+    position:absolute;
+    bottom: -828%;
+    width: 1230px!important;
+  }
 }
 body{
   margin: 0;
@@ -107,8 +112,8 @@ footer {
     gap: 20%;
     background-color: #2d301c;
     font-family: Mont;
-    min-width: 764px;
     min-width: 1195px ;
+
   }
   footer ul h3{
     color: #BDB89A;
