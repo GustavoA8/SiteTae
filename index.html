@@ -11,16 +11,40 @@
 </head>
 
 <body>
-    <script src="./js/script.js"></script>
     <header>
         <figure><a href="index.html"><img src="img/Ativo 194Alta resolução.png" alt=""></a></figure>
         <nav>
+            <!-- Navbar desktop -->
             <ul>
                 <li class="item-nav"><a href="history.html">The Shield</a></li>
                 <li class="item-nav"><a href="https://www.taetactical.com/the-training-method/">Training</a></li>
                 <li class="item-nav"><a href="#about">About Us</a></li>
                 <li class="item-nav"><a href="">Contact Us</a></li>
-                <li class="item-nav"><a href="https://www.instagram.com/taetacticalusa/" target="_blank">Social Media</a></li>
+                <!-- DropDown Midias sociais -->
+                <li class="item-nav li-dropDown" id="redes-sociais-dropDown">
+
+                    <span href="https://www.instagram.com/taetacticalusa/" target="_blank">
+                        Social Media
+                        <img src="icones/triangledown2.png" alt="" id="social-media-dropDown-icone">
+                    </span>
+
+                    <div id="midia-icones-container" class="invisivel">
+                        <a href="https://www.instagram.com/taetacticalusa/" target="_blank">
+                            <img src="./img/logo-insta.png"
+                                alt="">
+                        </a>
+                        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+                            <img src="./img/logo-face.png"
+                            alt="">
+                        </a>
+                    </div>
+                
+                </li>
+                <!-- Final Navbar desktop -->
+
+
+
+                <!-- Navbar Mobile -->
                 <div id="dropdown" onclick="dropdown()">
                     <div class="btnimg">
                         <img src="./img/icon-bar.png" alt="">
@@ -30,10 +54,12 @@
                         <li><a href="https://www.taetactical.com/the-training-method/">Training</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="">Contact Us</a></li>
-                        <li><a href="https://www.instagram.com/taetacticalusa/" target="_blank">Social Media</a></li>
+                        <li><a href="https://www.instagram.com/taetacticalusa/" target="_blank">Social Media <img src="icones/triangledown.png" alt=""></a></li>
 
                     </ul>
                 </div>
+                <!--Final Navbar Mobile -->
+
             </ul>
         </nav>
 
@@ -174,5 +200,7 @@
 
 
 </body>
+
+<script src="js/script.js"></script>
 
 </html>

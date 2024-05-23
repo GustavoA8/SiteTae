@@ -22,3 +22,21 @@ function dropdown() {
 
 
 }
+
+
+document.getElementById("redes-sociais-dropDown").addEventListener("click", ()=>{mostrarRedes("sim")});
+
+
+function mostrarRedes(tipo){
+    let midiasContainer = document.getElementById("midia-icones-container");
+    let setaDropDown = document.getElementById("social-media-dropDown-icone");
+
+    midiasContainer.classList.toggle("mostrar");
+    setaDropDown.classList.toggle("seta-acionada");
+
+
+
+   
+}
+
+// console.log(document.getElementById("redes-sociais-dropDown"))
