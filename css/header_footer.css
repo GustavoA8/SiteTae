@@ -10,28 +10,7 @@
 font-family: archivo;
 src: url(../font/ArchivoBlack-Regular.ttf);
 }
-@media (max-width: 700px) {
-  header{
-    padding: 50px;
-  }
-  header figure img{
-    width: 200px!important;
-  }
-  header nav ul .item-nav{
-    display: none!important;
-    
-  }
-  #dropdown{
-    display: block!important;
-    margin-left: 60%;
-    
-  }
-  footer{
-    position:absolute;
-    bottom: -828%;
-    width: 1230px!important;
-  }
-}
+
 body{
   margin: 0;
   font-family: Mont;
@@ -39,15 +18,16 @@ body{
 header{
     background-color: #2D301C;
     display: flex;
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    width: 100vw;
     z-index: 7;
     top: 0;
     font-family: Mont;
+    border-bottom: #BDB89A solid 3px;
 }
 nav{
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 nav ul {
     display: flex;
@@ -63,9 +43,7 @@ nav ul {
 
 }
 
-/* nav .li-dropDown{
-  position: relative;
-} */
+
 nav .item-nav a, nav .item-nav span{
   display: flex;
   flex-direction: row;
@@ -166,12 +144,12 @@ header figure img, footer figure img{
 
 footer {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     gap: 20%;
     background-color: #2d301c;
     font-family: Mont;
-    min-width: 1195px ;
+    /* min-width: 1195px ; */
 
   }
   footer ul h3{
@@ -219,4 +197,24 @@ footer {
     color: #525437;
   }
   
-  
+  @media (max-width: 700px) {
+    header{
+      padding: 50px;
+    }
+    header figure img{
+      width: 200px!important;
+    }
+    header nav ul .item-nav{
+      display: none!important;
+      
+    }
+    #dropdown{
+      display: block!important;
+      margin-left: 60%;
+      
+    }
+    footer{
+     
+      width: 100vw;
+    }
+  }

@@ -1,147 +1,22 @@
-@media (min-width:701px) and (max-width: 1580px) {
-  .section-shield {
-    height: 470px !important;
-  }
 
-  .section-about-us article h2 {
-    font-size: 50px !important;
-
-  }
-
-  .section-about-us article p {
-    width: 80% !important;
-    font-size: 15px !important;
-  }
-
+*{
+  box-sizing: border-box;
 }
-
+/* html, body{
+  height: 100%;
+  box-sizing: border-box;
+} */
 .section-shield {
   padding-top: 10px;
   background-image: url(../img/teste-fundo-site-alta-qualidade.png);
+  width: 100vw;
   height: 650px;
   background-size: 100%;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1195px;
 }
-@media (max-width: 700px) {
-  .section-shield{
-    background-image: url(../img/mobile\ ad\ 2.png)!important;
-    min-height: 2200px!important;
-    justify-content: center;
 
-    z-index: 0;
-    background-attachment: fixed;
-    background-size: cover;
-    position:relative;
-    top: 0;
-    left: 0;
-    width: 1230px!important;
-  }
-  .section-shield .parallax{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    color: red;
-    height: fit-content;
-
-  }
-  /* .section-shield #titulo{
-    margin-top: 110%;
-  } */
-  .section-shield h1 {
-    font-size: 150px!important;
-    line-height: 130px!important;
-  
-  }
-  .section-shield p{
-    font-size: 50px;
-    width: 300%
-  }
-  .section-shield button{
-    font-size: 40px!important;
-    width: 25%!important;
-    margin-bottom: 10%;
-  }
-  .section-usability{
-    /* margin-top: 2200px; */
-    height: 1900px!important;
-    box-shadow: rgba(10, 10, 10, 0.5) -1px -20px 29px 0px!important;
-    width: 1230px!important;
-    
-  }
-  .card{
-    display: grid!important;
-    grid-template-rows: 1fr 1fr;
-  }
-  .flip-card{
-    min-width: 500px!important;
-    height: 571px!important; 
-  }
-  .section-usability h2 {
-    font-size: 50px;
-  
-  }
-  .section-usability p{
-    font-size: 35px;
-    margin-top: 10%!important;
-  }
-  .section-training .background-video{
-    display: none;
-  }
-  .section-training{
-    background-image: url(../img/fundo-training-mobile.png);
-    background-size: cover;
-    background-position: center;
-    height: 1920px!important;
-    padding: 20px;
-  }
-
-  .containe{
-      width: 100%;
-
-  }
-
-  .section-training p{
-    font-size: 2em!important;
-  }
-  .section-training button{
-    position: absolute;
-    top: 115%;
-    left: 68%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    width: fit-content;
-    padding: 10px 50px
-      
-
-
-  }
-  .section-about-us{
-    display: block!important;
-    width: 1230px!important;
-    height: 600px;
-
-  }
-  .section-about-us figure{
-    display: none;
-  }
-  .section-about-us article{
-    width: 80%!important;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .section-about-us h2{
-    margin-bottom: 2%;
-  }
-  .section-about-us p{
-    font-size: 20px!important;
-  }
-
-  
-}
 .section-shield h1 {
   font-size: 90px;
   font-family: Stencil;
@@ -196,7 +71,7 @@ main .section-shield button:hover {
 
 .section-usability {
   background-color: #2D301C;
-  width: 99.5%;
+  width: 100vw;
   height: 700px;
   border: #BDB89A solid 3px;
   background-size: 100%;
@@ -204,7 +79,7 @@ main .section-shield button:hover {
   background-image: url(../img/fundo-usability.png);
   color: #BDB89A;
   box-shadow: rgba(10, 10, 10, 1) 0px 7px 29px 0px;
-  min-width: 1195px;
+  /* min-width: 1195px; */
 }
 
 .section-usability h2 {
@@ -319,7 +194,7 @@ video {
   position: relative;
   overflow: hidden;
   height: 590px;
-  min-width: 1195px;
+  width: 100vw;
 
 }
 
@@ -361,32 +236,47 @@ video {
 .section-about-us {
   background-image: url(../img/bandeira\ site\ usa\ about\ us.png);
   background-size: 100%;
-  width: 99.5%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  min-height: 400px;
+
   border: #BDB89A solid 3px;
   max-height: 576px;
-  min-width: 1195px;
+  box-sizing: border-box;
 
+ 
 }
-
+.about-us-conteudo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
 .section-about-us figure {
-  width: 100%;
+  position: relative;
+  width: 50%;
   max-height: 576px;
+  margin: 0;
 }
 
 .section-about-us figure img {
-  width: 78%;
-  margin-left: 26%;
-
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 90%;
 
 }
 
 .section-about-us article {
   font-family: archivo;
   background-color: #2d301c;
-  width: 90%;
-  max-height: 576px;
+  width: 50%;
+  padding: 30px;
+  /* max-height: 576px; */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #BDB89A;
   text-align: center;
   box-shadow: 25px 0px 20px -20px rgba(0, 0, 0, 0.45),
@@ -395,17 +285,159 @@ video {
 }
 
 .section-about-us article h2 {
-  font-size: 120px;
-  margin-top: 5%;
+  font-size: 90px;
+  margin: 45px 0px 20px 0px;
 
 }
 
 .section-about-us article p {
   text-align: justify;
-  width: 85%;
+  /* width: 85%; */
   font-family: Mont;
-  font-size: 17px;
+  font-size: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media (max-width: 1300px) {
+  .section-about-us figure img {
+    width: 90%;
+    height: auto;
+  
+  }
+}
+
+@media (min-width:701px) and (max-width: 1580px) {
+  .section-shield {
+    height: 470px !important;
+  }
+
+  .section-about-us article h2 {
+    font-size: 50px !important;
+
+  }
+
+  .section-about-us article p {
+    width: 80% !important;
+    font-size: 15px !important;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .section-shield{
+    background-image: url(../img/mobile\ ad\ 2.png)!important;
+    min-height: 2200px!important;
+    justify-content: center;
+
+    border: 10px solid red;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+    top: 0;
+    left: 0;
+    /* width: 1230px!important; */
+
+  }
+  .section-shield .parallax{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: red;
+    height: fit-content;
+
+  }
+  
+  .section-shield h1 {
+    font-size: 150px!important;
+    line-height: 130px!important;
+  
+  }
+  .section-shield p{
+    font-size: 50px;
+    width: 300%
+  }
+  .section-shield button{
+    font-size: 40px!important;
+    width: 25%!important;
+    margin-bottom: 10%;
+  }
+  .section-usability{
+    /* height: 100vw!important; */
+    box-shadow: rgba(10, 10, 10, 0.5) -1px -20px 29px 0px!important;
+    /* width: 1230px!important; */
+
+  }
+  .card{
+    display: grid!important;
+    grid-template-rows: 1fr 1fr;
+  }
+  .flip-card{
+    min-width: 500px!important;
+    height: 571px!important; 
+  }
+  .section-usability h2 {
+    font-size: 50px;
+  
+  }
+  .section-usability p{
+    font-size: 35px;
+    margin-top: 10%!important;
+  }
+  .section-training .background-video{
+    display: none;
+  }
+  .section-training{
+    background-image: url(../img/fundo-training-mobile.png);
+    background-size: cover;
+    background-position: center;
+    height: 1920px!important;
+    padding: 20px;
+  }
+
+  .containe{
+      width: 100%;
+
+  }
+
+  .section-training p{
+    font-size: 2em!important;
+  }
+  .section-training button{
+    position: absolute;
+    top: 115%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 10px 50px
+      
+
+
+  }
+  .section-about-us{
+    display: block!important;
+    width: 100vw!important;
+    height: 600px;
+
+  }
+  .section-about-us figure{
+    display: none;
+  }
+  .section-about-us article{
+    width: 80%!important;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-about-us h2{
+    margin-bottom: 2%;
+  }
+  .section-about-us p{
+    font-size: 20px!important;
+  }
+
+  
+}
