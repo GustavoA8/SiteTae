@@ -38,14 +38,10 @@ function popupNO(){
 }
 function popupYES(){
     console.log("funcionando")
-    header = document.querySelector("header")
-    main = document.querySelector("main")
-    footer = document.querySelector("footer")
+
     popupElement = document.getElementsByClassName("pop-up")[0]
 
-    header.classList.remove('inativo')
-    main.classList.remove('inativo')
-    footer.classList.remove('inativo')
+    
     popupElement.style.display = "none"
 }
 

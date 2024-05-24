@@ -7,18 +7,27 @@
   box-sizing: border-box;
 } */
 .pop-up{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 7;
+
+}
+.pop-up-conteudo{
   background-image: url(../img/age-popup-fundo.png);
   background-repeat: no-repeat;
   width: 600px;
   height: 600px;
   background-size: 100%;
   text-align: center;
-  position: absolute;
+  
   color: #BDB89A;
-  top: 11%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 7;
   
 }
 .pop-up h2{
@@ -50,6 +59,8 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+/* ---------- MAIN ---------- */
 .section-shield {
   position: relative;
   padding-top: 10px;
@@ -381,7 +392,7 @@ video {
   }
 
   .section-about-us article h2 {
-    font-size: 50px !important;
+    font-size: 50px;
 
   }
 
@@ -394,11 +405,8 @@ video {
 
 /* Mobile */
 @media (max-width: 700px) {
-  .pop-up{
+  .pop-up-conteudo{
     width: 400px!important;
-    top: 7%!important;
-    
-  
   }
   .pop-up p{
     font-size: 10px!important;
@@ -521,16 +529,17 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
-  .section-about-us h2{
+  .section-about-us article h2{
+    font-size: 2.7rem;
     margin-bottom: 2%;
   }
-  .section-about-us p{
-    font-size: 20px!important;
+  .section-about-us article p{
+    font-size: 1rem;
   }
 
   
 }
-.inativo{
+/* .inativo{
   opacity: 0.1;
   pointer-events: none;
-}
+} */
