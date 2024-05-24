@@ -12,7 +12,11 @@
 
 <body>
     <header class="inativo">
-        <figure><a href="index.html"><img src="img/Ativo 194Alta resolução.png" alt=""></a></figure>
+
+        <figure class="nav-logo">
+            <a href="index.html"><img src="img/Ativo 194Alta resolução.png" alt=""></a>
+        </figure>
+
         <nav>
             <!-- Navbar desktop -->
             <ul>
@@ -43,11 +47,11 @@
 
 
                 <!-- Navbar Mobile -->
-                <div id="dropdown" onclick="dropdown()">
-                    <div class="btnimg">
-                        <img src="./img/icon-bar.png" alt="">
-                    </div>
-                    <ul class="dropdown-content">
+                <div id="dropdown" class="hamburguer">
+                  
+                    <img src="./img/icon-bar.png" alt="" class="hambuguer-img">
+                    
+                    <ul class="navbar-mobile-opcoes-lista invisivel">
                         <li><a href="history.html">The Shield</a></li>
                         <li><a href="https://www.taetactical.com/the-training-method/">Training</a></li>
                         <li><a href="#about">About Us</a></li>
@@ -90,6 +94,7 @@
                     <a href="history.html"><button>LEARN MORE</button></a>
                     <a href="https://www.taetactical.com/store/"><button>SHOP NOW</button></a>
                 </div>
+
             </div>
 
         </section>
@@ -185,8 +190,7 @@
     </main>
     <footer class="inativo">
 
-
-
+        <!-- Logos -->
         <div class="logos">
             <figure><img src="img/Ativo 194Alta resolução.png" alt=""></figure>
             <figure class="sociais">
@@ -200,6 +204,8 @@
                 </div>
             </figure>
         </div>
+
+        <!-- Listas -->
         <div class="listas">
 
             <ul class="contact">

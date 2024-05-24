@@ -13,6 +13,7 @@ src: url(../font/ArchivoBlack-Regular.ttf);
 
 body{
   margin: 0;
+  position: relative;
   font-family: Mont;
   justify-items: center;
   background-color: black;
@@ -65,19 +66,19 @@ body{
 }
 
 header{
-    background-color: #2D301C;
+    position: sticky;  
     display: flex;
-    position: sticky;
+    justify-content: space-between;
     width: 100vw;
-    z-index: 7;
+    padding: 0px 20px;
+    background-color: #2D301C;
     top: 0;
-    border: 3px solid red;
     font-family: Mont;
     border-bottom: #BDB89A solid 3px;
+    z-index: 7;
 }
 nav{
-  position: relative;
-  width: 100vw;
+  width: inherit;
 }
 nav ul {
     display: flex;
@@ -87,10 +88,6 @@ nav ul {
     text-align: center;
     gap: 7%;
     justify-content: center;
-
-
-    
-
 }
 
 
@@ -99,6 +96,8 @@ nav .item-nav a, nav .item-nav span{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: max-content;
+
   color: #BDB89A;
 }
 nav .item-nav #social-media-dropDown-icone{
@@ -163,17 +162,19 @@ nav .item-nav #midia-icones-container *{
   width: 100px;
 
 }
-.dropdown-content{
+.navbar-mobile-opcoes-lista{
   display: none;
-  width: 1300px;
-  margin-right: 1400px;
+
+}
 
   
 
+
+.navbar-mobile-opcoes-lista li a{
+  font-size: 25px;
+  border-bottom: 3px solid #BDB89A;
 }
-.dropdown-content li a{
-  font-size: 50px;
-}
+
 header li{
     margin-top: 25px;
     transition: transform 0.3s ease;
@@ -195,6 +196,11 @@ a{
 header figure img, footer figure img{
     width: 150px;
 }
+footer figure img{
+  width: 150px;
+
+}
+
 .separeitor{
   border: solid #BDB89A 1px;
   margin-top: 25px;
@@ -203,8 +209,8 @@ header figure img, footer figure img{
 footer {
     display: flex;
     width: 100vw;
-    justify-content: center;
-    gap: 20%;
+    justify-content: space-evenly;
+  
     background-color: #2d301c;
     font-family: Mont;
   }
@@ -253,21 +259,64 @@ footer {
     color: #525437;
   }
   
+  /* Mobile */
   @media (max-width: 700px) {
     header{
-      padding: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    header figure img{
-      width: 200px!important;
+    header figure.nav-logo img{
+      width: 135px!important;
+    }
+
+    nav ul{
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    nav .hamburguer{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    nav .hamburguer img{
+      width: 50px;
+
     }
     header nav ul .item-nav{
       display: none!important;
       
     }
     #dropdown{
+      position: inherit;
       display: block!important;
-      margin-left: 60%;
       
+      
+    }
+
+    .navbar-mobile-opcoes-lista{
+      position: absolute;
+      top: -100%;
+      right: 0;
+
+      display: block;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.541);
+      font-size: 25px;
+      opacity: 0;
+      pointer-events: none;
+      transition: 500ms;
+
+    }
+    .navbar-mobile-opcoes-lista.invisivel{
+      top: 100%;
+      opacity: 1;
+      pointer-events: all;
+
     }
     footer{
      
