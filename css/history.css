@@ -63,11 +63,11 @@
     }
     .container-3{
         height: 450px!important;
-        max-width:1216px!important ;
+
     }
     .container-4{
         max-height: 470px!important;
-        max-width:1216px!important ;
+
     }
 }
 
@@ -79,7 +79,7 @@
         width: 1230px!important;
     }
     .container-1{
-        margin-top: 25%!important;
+
     }
     .container-1 section{
         margin: 0!important;

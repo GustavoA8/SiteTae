@@ -1,4 +1,5 @@
 verificar = false
+popup = null 
 function dropdown() {
     if (verificar == false) {
         console.log('funcionando')
@@ -37,6 +38,32 @@ function mostrarRedes(tipo){
 
 
    
+}
+
+function popupNO(){
+    console.log("funcionando")
+    body = document.getSelection("body")
+    popupElement = document.getElementsByClassName("pop-up")[0]
+    let msg = document.getElementById("errorAge")
+
+    msg.style.fontSize = "15px"
+    msg.style.color = "red"
+    msg.innerHTML = "You are not old enough to have acces to this website."
+
+
+
+}
+function popupYES(){
+    console.log("funcionando")
+    header = document.querySelector("header")
+    main = document.querySelector("main")
+    footer = document.querySelector("footer")
+    popupElement = document.getElementsByClassName("pop-up")[0]
+
+    header.classList.remove('inativo')
+    main.classList.remove('inativo')
+    footer.classList.remove('inativo')
+    popupElement.style.display = "none"
 }
 
 // console.log(document.getElementById("redes-sociais-dropDown"))
