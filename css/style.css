@@ -406,14 +406,14 @@ video {
 /* Mobile */
 @media (max-width: 700px) {
   .pop-up-conteudo{
-    width: 400px!important;
+    width: 400px;
   }
   .pop-up p{
     font-size: 10px!important;
   }
   .pop-up h2{
 
-    font-size: 25px;
+    font-size: 23px;
   
   }
   .section-shield{
@@ -440,7 +440,7 @@ video {
   }
   
   .section-shield h1 {
-    font-size: 60px!important;
+    font-size: 60px;
     /* line-height: 130px!important; */
   
   }
@@ -462,7 +462,7 @@ video {
   }
   .section-usability{
   
-    height: fit-content;
+    height: 1100px;
     box-shadow: rgba(10, 10, 10, 0.5) -1px -20px 29px 0px!important;
 
   }
@@ -476,7 +476,7 @@ video {
   
   }
   .section-usability p{
-    font-size: 35px;
+    font-size: 20px;
     margin-top: 10%!important;
   }
   .section-training .background-video{
@@ -484,10 +484,10 @@ video {
   }
   .section-training{
     background-image: url(../img/fundo-training-mobile.png);
-    background-size: cover;
-    background-position: center;
-    height: 1400px!important;
-    padding: 8px 20px;
+        background-size: 100% 100%;
+        background-position: center;
+        height: 1000px !important;
+        padding: 5px 20px;
   }
 
   .containe{
@@ -496,23 +496,23 @@ video {
   }
 
   .section-training h2{
-    margin: 0px 0px 45px 0px;
+    font-size: 2.5rem;
   }
 
   .section-training p{
-    font-size: 2em!important;
+    font-size: 1.3em!important;
     width: 90%;
   }
   .section-training button{
     position: absolute;
-    top: 118%;
-    left: 76%;
+    top: 105%;
+    left: 50%;
 
     transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    width: fit-content;
+    font-size: 1.0rem;
+    width: max-content;
     height: auto;
-    padding: 10px 50px
+    padding: 14px 34px;
   }
   .section-about-us{
     padding: 40px 0px;
@@ -543,3 +543,35 @@ video {
   opacity: 0.1;
   pointer-events: none;
 } */
+
+@media (max-width: 400px){
+  .pop-up-conteudo{
+    width: 90vw;
+  }
+  .pop-up article .btn-pop-up {
+    margin-top: 6%;
+}
+
+.btn-pop-up button{
+  width: min-content;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+  .section-usability {
+    height: 980px;
+  }
+  .section-usability .flip-card{
+    min-width: 229px;
+    max-width: 229px;
+    height: 300px;
+  }
+  .section-shield h1{
+    font-size: 3rem;
+    line-height: 68px !important;
+  }
+  .section-shield #botao{
+    width: 80vw;
+  }
+}
