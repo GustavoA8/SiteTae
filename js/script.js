@@ -1,5 +1,4 @@
 // Altera visibilidade da navbar mobile ao clicar no menu hamburguer
-
 document.getElementById("dropdown").addEventListener("click", ()=>{
 
     document.getElementsByClassName("navbar-mobile-opcoes-lista")[0].classList.toggle("invisivel");
@@ -19,6 +18,33 @@ document.getElementById("redes-sociais-dropDown").addEventListener("click", ()=>
     
 });
 
+document.getElementById("scroll-social-media-btn").addEventListener("click", ()=>{
+    console.log("buirg")
+    document.getElementsByClassName("sociais")[0].scrollIntoView();
+
+})
+
+
+function scrollHomePage(pagina){
+    switch (pagina) {
+        case "about":
+            document.getElementsByClassName("section-about-us")[0].scrollIntoView();
+
+            break;
+        case "social":
+            document.getElementsByClassName("sociais")[0].scrollIntoView();
+
+            break;
+
+        case "contact":
+            document.getElementsByClassName("contact")[0].scrollIntoView();
+            break;
+    
+        
+        default:
+            break;
+    }
+}
 
 
 

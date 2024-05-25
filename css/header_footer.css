@@ -48,7 +48,7 @@ nav ul {
 }
 
 
-nav .item-nav a, nav .item-nav span{
+nav .item-nav a, nav .navbar-mobile-opcoes-lista span{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -98,18 +98,20 @@ nav .item-nav #social-media-dropDown-icone.seta-acionada{
   border: 1px solid #BDB89A;
   background-color: #2D301C;
   pointer-events: none;
-
-
-
   
 }
-
 
 nav .item-nav #midia-icones-container *{
   width: 35px;
   padding: 5px;
 
   
+}
+
+nav .hamburguer li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 #dropdown{
   display: none;
