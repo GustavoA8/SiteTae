@@ -20,50 +20,7 @@ body{
   /* overflow-x: hidden; */
 
 }
-.pop-up{
-  background-image: url(../img/age-popup-fundo.png);
-  background-repeat: no-repeat;
-  width: 600px;
-  height: 600px;
-  background-size: 100%;
-  text-align: center;
-  position: absolute;
-  color: #BDB89A;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 7;
-  
-}
-.pop-up h2{
-  font-family: Stencil;
-  font-weight: lighter;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 40px;
 
-}
-.pop-up article{
-  margin-top: 25%;
-
-  
-}
-.pop-up article p{
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 20px;
-}
-.pop-up article .btn-pop-up{
-  margin-top: 15%;
-}
-.btn-pop-up button{
-  color: #BDB89A;
-  border: #BDB89A solid 3px ;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
 header{
     position: sticky;  
@@ -322,19 +279,7 @@ footer {
      
       width: 100vw;
     }
-    .pop-up{
-      width: 400px!important;
-      
     
-    }
-    .pop-up p{
-      font-size: 10px!important;
-    }
-    .pop-up h2{
-
-      font-size: 25px;
-    
-    }
 
     
   }
