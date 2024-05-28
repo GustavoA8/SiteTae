@@ -415,6 +415,7 @@ video {
     font-size: 23px;
   
   }
+  
   .section-shield{
     position: relative;
     width: 100vw;
@@ -429,12 +430,22 @@ video {
     font-size: 10px;
     z-index: 0;
   }
+  .section-shield::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo com opacidade */
+}
   .section-shield .parallax{
     position: absolute;
     bottom: 90px;
     left: 45px;
     color: red;
     height: fit-content;
+    z-index: 5;
 
   }
   
@@ -485,7 +496,7 @@ video {
     background-image: url(../img/fundo-training-mobile.png);
         background-size: 100% 100%;
         background-position: center;
-        height: 1000px !important;
+        height: 760px !important;
         padding: 5px 20px;
   }
 
@@ -496,22 +507,23 @@ video {
 
   .section-training h2{
     font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: 15%;
   }
 
   .section-training p{
-    font-size: 1.3em!important;
-    width: 90%;
+    font-size: 1em!important;
+    width: 80%;
   }
   .section-training button{
-    position: absolute;
-    top: 105%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
     font-size: 1.0rem;
     width: max-content;
+    margin-top: 105%;
     height: auto;
     padding: 14px 34px;
+  }
+  .section-training button:hover{
+    transform: scale(1.05)!important;
   }
   .section-about-us{
     padding: 40px 0px;

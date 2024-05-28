@@ -34,6 +34,7 @@ main .container-1 h1{
 main .container-1 p{
     color: #BDB89A;
     font-size: 25px;
+
     
 
 }
@@ -66,14 +67,10 @@ main .container-1 .section-p6{
 }
 .container-2{
     background-image: url(../img/fundo\ learn\ more\ story.png);
-    background-position: 100% 100%;
-    background-size: 100% 100%;
-    /* min-height: 3582px; */
-    /* height: 100%; */
-    height: 1000px;
+    min-height: 3582px;
+    height: 100%; 
     text-align: center;
     width: 100%;
-    position: relative;
 
 }
 main .container-2 h1{
@@ -128,32 +125,29 @@ main .container-shield-story section p{
 }
 main .container-2 .section-p1{
     width: 49%;
-    display: block;
-    top: 7%;
-    left: 5%;
+
     
 }
 main .container-2 .section-p2{
     width: 37%;
-    top: 29.6%;
-    left: 13%;
+    
 
 }
 main .container-2 .section-p3{
     width: 49%;
-    bottom: 36%;
-    right: 2%;
+    
 
 }
 main .container-2 .section-p4{
     width: 49%;
-    bottom: 18%;
-    left: 5%;
+    margin-left: auto;
+
 }
 main .container-2 .section-p5{
-    width: 49%;
-    bottom: 18%;
-    left: 5%;
+    margin-top: 10%;
+    width: 50%;
+ 
+   
     
 }
 
@@ -212,6 +206,10 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
         font-size: 60px!important;
         padding-top: 15%!important;
     }
+    .container-1 section{
+        margin: 0!important;
+        
+    }
     main .section-p1{
         margin-left: 11%!important;
         width: 70%!important;
@@ -233,6 +231,9 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
         margin-top: 10%!important;
         width: 70%!important;
         margin-left: 11%!important
+    }
+    main .section-p5{
+        width: 70%!important;
     }
 }
 @media(min-width:941px)and ( max-width: 1300px){
@@ -276,9 +277,16 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
         background-size: 100%!important;
         width: 1230px!important;
     } */
+
+    .container-1 p,.container-2 p{
+        font-size: 17px!important;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
    
     .container-1 section{
-        margin: 0!important;
+        
         float: none !important;
         margin-left: auto!important;
         margin-right: auto!important;
@@ -289,9 +297,17 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
         float: none !important;
         margin-left: auto!important;
         margin-right: auto!important;
+        width: 90%!important;
+        
     
     }
+    
+    
+    .container-2{
+        background-image: url(../img/fundo-reptil.png);
+        min-height: 2000px!important;
+    }
     .container-3{
-        height: 400px!important;
+        height: 180px!important;
     }
 }

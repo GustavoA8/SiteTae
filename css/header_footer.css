@@ -79,6 +79,10 @@ nav .item-nav #social-media-dropDown-icone.seta-acionada{
   pointer-events: all;
   
 }
+.li-dropDown #midia-icones-container a{
+  margin-left: 10%;
+  height: 40px;
+}
 
 .li-dropDown #midia-icones-container{
   position: absolute;
@@ -87,23 +91,22 @@ nav .item-nav #social-media-dropDown-icone.seta-acionada{
   transform: translateX(-50%);
   opacity: 0;
   transition: 500ms;
-  width: 100%;
+  width: 150%;
   /* width: fit-content; */
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
   border: 1px solid #BDB89A;
   background-color: #2D301C;
   pointer-events: none;
+  max-height: 120px;
+
   
 }
 
 nav .item-nav #midia-icones-container *{
   width: 35px;
-  padding: 5px;
+  padding: 0px 5px 0px 5px;
+
 
   
 }
