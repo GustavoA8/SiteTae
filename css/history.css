@@ -2,6 +2,9 @@
 *{
    box-sizing: border-box; 
 }
+body{
+    background-color: #2d301c;
+}
 header, footer{
     width: inherit!important;
 }
@@ -62,11 +65,12 @@ main .container-1 .section-p5{
 }
 main .container-1 .section-p6{
     margin-top: 20%;
-    width: 10%;
+    width: 30%;
     margin-left: 70%;
 }
 .container-2{
     background-image: url(../img/fundo\ learn\ more\ story.png);
+    background-size: 100% 100%;
     min-height: 3582px;
     height: 100%; 
     text-align: center;
@@ -88,7 +92,6 @@ main section{
     border-radius: 10px;
     padding: 30px;
     width: 35%;
-    /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
 }
 main .container-shield-story{
     min-height:2200px ;
@@ -103,24 +106,12 @@ main .container-shield-story article{
     width: 100%;
 }
 
-.texto-flutuante{
-    width: 50%;
-    /* border: 1px solid red!important; */
-    display: block;
-    position: absolute;
-}
-.texto-flutuante{
-    /* background-color: orange; */
-    justify-self: left;
-    
-}
 
 
 main .container-shield-story section p{
     font-family: Mont;
     font-size: 25px;
     color: #2D301C;
-    /* background-clip: text; */
     
 }
 main .container-2 .section-p1{
@@ -204,8 +195,7 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
    
     main h1{
         font-size: 60px!important;
-        padding-top: 15%!important;
-    }
+        padding-top: 29% !important;    }
     .container-1 section{
         margin: 0!important;
         
@@ -238,28 +228,7 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
 }
 @media(min-width:941px)and ( max-width: 1300px){
     
-    /* main .section-p1{
-        margin-left: 11%!important;
-        width: 70%!important;
-        
-    }
-    main .section-p2{
-        margin-top: 10%!important;
-        float: inline-start!important;
-        margin-left: 11%;
-        width: 70%!important;
-    }
-    main .section-p3{
-        margin-left: 11%!important;
-        width: 70%!important;
-        margin-top: 70%!important;
-    }
-    main .section-p4{
-        float: inline-start!important;
-        margin-top: 10%!important;
-        width: 70%!important;
-        margin-left: 11%!important
-    } */
+
     .container-3{
         height: 450px!important;
 
@@ -272,15 +241,10 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
 
 
 @media (max-width: 939px){
-    /* .container-1,.container-2,.container-3,.container-4{
-        width: 290%!important;
-        background-size: 100%!important;
-        width: 1230px!important;
-    } */
+  
 
     .container-1 p,.container-2 p{
         font-size: 17px!important;
-        max-width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -303,11 +267,25 @@ main .container-4 .comprar-escudo-btn-aba-sobre:hover{
     }
     
     
-    .container-2{
+    main .container-shield-story{
         background-image: url(../img/fundo-reptil.png);
-        min-height: 2000px!important;
+        min-height: unset;
+        height: fit-content;
+        padding-bottom: 110px;
     }
     .container-3{
-        height: 180px!important;
+        height: 322px!important;
+    }
+}
+
+
+
+@media (max-width: 700px){
+    main .container-4 .comprar-escudo-btn-aba-sobre{
+        width: 60%;
+    }
+
+    main .container-1 .section-p6 {
+        width: 60%;
     }
 }

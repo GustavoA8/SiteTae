@@ -2,6 +2,7 @@
 document.getElementById("dropdown").addEventListener("click", ()=>{
 
     document.getElementsByClassName("navbar-mobile-opcoes-lista")[0].classList.toggle("invisivel");
+    document.getElementsByClassName("hambuguer-img")[0].classList.toggle("ativado");
 
 });
 

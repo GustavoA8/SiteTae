@@ -407,7 +407,7 @@ video {
   .section-shield {
     /* height: 470px !important; */
     background-size: cover;
-    background-position: center;
+    background-position: 63% 0%;
   }
 
   .section-shield .parallax{
@@ -488,6 +488,7 @@ video {
   .section-shield #botao{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 15px;
   }
@@ -577,10 +578,6 @@ video {
 
   
 }
-/* .inativo{
-  opacity: 0.1;
-  pointer-events: none;
-} */
 
 @media (max-width: 400px){
   .pop-up-conteudo{
