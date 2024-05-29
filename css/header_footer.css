@@ -42,6 +42,7 @@ nav ul {
     text-decoration: none;
     list-style-type: none;
     margin-top: 15px;
+    padding-left: 0;
     text-align: center;
     gap: 7%;
     justify-content: center;
@@ -55,8 +56,11 @@ nav .item-nav a, nav .navbar-mobile-opcoes-lista span{
   align-items: center;
   width: max-content;
 
+}
+nav .item-nav *{
   color: #BDB89A;
 }
+
 .seta-dropdown-nav{
   width: 15px!important;
   transition: 500ms;
@@ -212,9 +216,9 @@ footer {
   footer a:hover{
     color: #525437;
   }
-  
-  /* Mobile */
-  @media (max-width: 700px) {
+
+  /* Navbar hamburguer */
+  @media (max-width: 900px){
     header{
       display: flex;
       align-items: center;
@@ -222,6 +226,9 @@ footer {
       justify-content: space-between;
     }
 
+    header li{
+      cursor: auto;
+    }
     header li:nth-child(1){
       margin-top: 0;
     }
@@ -238,15 +245,17 @@ footer {
       margin-top: 0;
       margin-bottom: 0;
       padding: 0;
-      cursor: pointer;
+ 
     }
     .navbar-mobile-opcoes-lista{
       padding: 25px;
       border-bottom: #BDB89A solid 3px;
     }
-    .navbar-mobile-opcoes-lista li a{
+    .navbar-mobile-opcoes-lista li a, .navbar-mobile-opcoes-lista li span{
+      color: #BDB89A;
       font-size: 1.3rem;
       border-bottom: 3px solid #BDB89A;
+      cursor: pointer;
     }
     
 
@@ -290,6 +299,11 @@ footer {
       pointer-events: all;
 
     }
+
+  }
+  /* Mobile */
+  @media (max-width: 700px) {
+    
     footer{
       display: flex;
       flex-direction: column;
