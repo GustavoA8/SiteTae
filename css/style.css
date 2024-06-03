@@ -107,7 +107,7 @@ html{
 
 }
 
-button {
+main button, .pop-up button {
   background: none;
   font-family: Mont;
   margin-right: 10px;

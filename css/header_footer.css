@@ -25,6 +25,8 @@ header{
     position: sticky;  
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 10vh;
     width: 100vw;
     padding: 0px 20px;
     background-color: #2D301C;
@@ -32,8 +34,26 @@ header{
     font-family: Mont;
     border-bottom: #BDB89A solid 3px;
     z-index: 7;
+    transition: 500ms;
 }
 
+header *{
+  transition: 500ms;
+}
+
+header.scrollNav figure{
+  transform: scale(0.7);
+
+}
+
+header.scrollNav{
+  height: 7vh;
+  background-color: rgba(45, 48, 28, 0.47);
+}
+header.scrollNav ul li{
+  margin-top: 0;
+
+}
 nav{
   width: inherit;
 }
@@ -226,6 +246,42 @@ footer {
     color: #525437;
   }
 
+  footer form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  footer form input, footer form textarea{
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    background-color: #BDB89A;
+  }
+
+  textarea{
+    height: 130px;
+  }
+
+  footer form label{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #BDB89A;
+  }
+
+  form button{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+
+    font-weight: bold;
+    color: black;
+    background-color: #BDB89A;
+
+  }
+
+
   /* Navbar hamburguer */
   @media (max-width: 900px){
     header{
@@ -311,6 +367,15 @@ footer {
 
     }
 
+    footer{
+      display: flex;
+      flex-direction: column;
+    }
+
+    form{
+      width: 50%;
+    }
+
   }
   /* Mobile */
   @media (max-width: 700px) {
@@ -324,7 +389,10 @@ footer {
       display: flex;
       flex-direction: column;
     }
-    
 
+    form{
+      width: 100%;
+    }
+    
     
   }
